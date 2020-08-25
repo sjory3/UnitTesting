@@ -11,9 +11,9 @@ namespace UnitTest.Tests
     public class WithdrawTests
     {
         [Theory]
-        [InlineData(5000,5000)]
-        [InlineData(-5,10000)]
-        [InlineData(10000,0)]
+        [InlineData(5000, 5000)]
+        [InlineData(-5, 10000)]
+        [InlineData(10000, 0)]
         public void Withdraw_ShouldWithdrawIfAmoountUnderBalance(double ammount, double expected)
         {
             //Arrange

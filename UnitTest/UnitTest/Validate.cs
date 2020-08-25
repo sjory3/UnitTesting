@@ -8,10 +8,13 @@ namespace UnitTest
 {
     public static class Validate
     {
-        public static bool ValidatePin(int testPin)
+        public static bool ValidatePin(uint testPin)
         {
-            int pin = 1234;
-
+            uint pin = 1234;
+            if (testPin < 999 || testPin > 9999)
+            {
+                return false;
+            }
             if (testPin == pin)
             {
                 return true;
